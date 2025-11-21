@@ -1,0 +1,124 @@
+/* Reset básico e fontes */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    display: flex; /* Habilita o layout flexbox para o sidebar e o conteúdo */
+}
+
+/* Estilo do Menu Lateral */
+.sidebar {
+    width: 250px; /* Largura do menu */
+    background-color: #2c3e50; /* Cor escura de fundo */
+    color: white;
+    height: 100vh; /* Altura total da viewport */
+    position: fixed; /* Fixa na lateral */
+    display: flex;
+    flex-direction: column; /* Coloca o menu e o rodapé em coluna */
+    justify-content: space-between; /* Empurra o rodapé para baixo */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.menu-top {
+    padding-top: 20px;
+}
+
+.sidebar h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #ecf0f1;
+}
+
+/* Estilo da Navegação Principal */
+.main-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.main-nav li a {
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+.main-nav li a:hover {
+    background-color: #34495e; /* Fundo levemente mais escuro ao passar o mouse */
+}
+
+/* 1.2. Rodapé do Menu Lateral */
+.sidebar-footer {
+    padding: 20px;
+    border-top: 1px solid #34495e; /* Separador */
+    text-align: center;
+}
+
+.vendedor-info {
+    margin-bottom: 15px;
+}
+
+.vendedor-foto {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%; /* Foto redonda */
+    object-fit: cover;
+    margin-bottom: 5px;
+    border: 2px solid #ecf0f1;
+}
+
+.vendedor-nome {
+    display: block;
+    font-size: 0.9em;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.vendedor-acoes a {
+    display: block;
+    padding: 10px;
+    margin-top: 8px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 0.85em;
+    font-weight: bold;
+    transition: opacity 0.3s;
+}
+
+.btn-unidade {
+    background-color: #f39c12; /* Laranja */
+    color: white;
+}
+
+.btn-logoff {
+    background-color: #e74c3c; /* Vermelho */
+    color: white;
+}
+
+.vendedor-acoes a:hover {
+    opacity: 0.9;
+}
+
+/* 2. Conteúdo Principal */
+.content {
+    margin-left: 250px; /* Deve ter a mesma largura do sidebar para não sobrepor */
+    flex-grow: 1;
+    padding: 20px;
+}
+
+header {
+    background-color: white;
+    padding: 15px 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.page-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    min-height: 500px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
